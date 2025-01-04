@@ -2,10 +2,11 @@ import {Component, computed, OnInit, signal, WritableSignal} from '@angular/core
 import {Hero} from '../heroes/heroes.types';
 import {HeroService} from '../hero.service';
 import {RouterLink} from '@angular/router';
+import {HeroSearchComponent} from '../hero-search/hero-search.component';
 
 @Component({
   selector: 'app-dashboard',
-  imports: [RouterLink],
+  imports: [RouterLink, HeroSearchComponent],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss'
 })
