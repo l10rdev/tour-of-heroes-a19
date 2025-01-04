@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import {HeroesComponent} from './heroes/heroes.component';
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  imports: [HeroesComponent],
   templateUrl: './app.component.html',
 })
 export class AppComponent {
