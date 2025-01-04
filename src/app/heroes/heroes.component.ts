@@ -1,12 +1,11 @@
 import {Component, signal, WritableSignal} from '@angular/core';
-import {UpperCasePipe} from '@angular/common';
-import {FormsModule} from '@angular/forms';
 import {Hero} from './heroes.types';
 import {HEROES} from '../data/mock-heroes';
+import {HeroDetailComponent} from '../hero-detail/hero-detail.component';
 
 @Component({
   selector: 'app-heroes',
-  imports: [UpperCasePipe, FormsModule],
+  imports: [HeroDetailComponent],
   templateUrl: './heroes.component.html',
   styleUrl: './heroes.component.scss'
 })
